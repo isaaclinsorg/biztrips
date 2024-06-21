@@ -9,17 +9,19 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 @Entity
-public class Employee  {
+public class User {
 
     @Id
     @NonNull
     private int id;
 
     @NonNull
-    private String name;
+    private String firstName;
 
     @NonNull
-    private String jobTitle;
+    private String lastName;
+
+    private String flightIDFS;
 
 
 

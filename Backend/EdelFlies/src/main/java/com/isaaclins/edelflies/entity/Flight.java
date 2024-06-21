@@ -20,10 +20,18 @@ public class Flight {
 
 	@NonNull
 	private Long number;
+
+	@NonNull
 	private String cityFrom;
+
+	@NonNull
 	private String cityTo;
+
+	@NonNull
 	private LocalDateTime flightDate;
-	private int PlaneIDFS;
+
+	@NonNull
+	private int planeIDFS;
 
 
 
