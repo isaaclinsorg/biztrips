@@ -21,7 +21,6 @@ public class User {
     @NonNull
     private String lastName;
 
-    @NonNull
     private String flightIDFS;
 
 
