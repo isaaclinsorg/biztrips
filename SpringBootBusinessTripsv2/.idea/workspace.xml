@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ff4e74f-ac3c-483a-973d-8a78b2fc33e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/ex/TripNotFoundAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/ex/TriptNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/BusinessTrip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/BusinessTripController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/BusinessTripRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/BusinessTripsBackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/Flight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/FlightController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/FlightRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/Meeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/MeetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/MeetingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/main/GeneralConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/trips/repo/main/SpringWebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/clip/trips/SpringBootBusinessTripsv2/SpringBootBusinessTripsv2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/images/items/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/components/TripList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/components/Wishlist.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/components/tripsReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/components/tripsService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v2-usereducer-after/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/board1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/board2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/board3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/items/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Cart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Checkout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Detail.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/DetailRefs.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/ErrorBoundary.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/PageNotFound.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Products.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/Spinner.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/cartContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/cartReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/TripList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/Wishlist.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/tripsReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/components/tripsService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/services/productService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/services/shippingService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/services/useFetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/services/useFetchAll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../businesstrips-wishlist-client-func-v3-react-router-v6-after/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.my-healthcheck.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/aria_log.00000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/aria_log_control" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/demo/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/ib_buffer_pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/ib_logfile0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/ibdata1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mariadb_upgrade_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/multi-master.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/column_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/column_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/column_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/columns_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/columns_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/columns_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/db.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/db.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/db.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/event.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/event.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/event.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/func.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/func.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/func.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/general_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/general_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/general_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/global_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/global_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/global_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/gtid_slave_pos.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/gtid_slave_pos.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_category.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_category.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_category.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_keyword.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_keyword.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_keyword.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_relation.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_relation.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_relation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_topic.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_topic.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/help_topic.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/index_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/index_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/innodb_index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/innodb_index_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/innodb_table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/innodb_table_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/plugin.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/plugin.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/plugin.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proc.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proc.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proc.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/procs_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/procs_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/procs_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proxies_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proxies_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/proxies_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/roles_mapping.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/roles_mapping.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/roles_mapping.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/servers.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/servers.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/servers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/slow_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/slow_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/slow_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/table_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/table_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/tables_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/tables_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/tables_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_leap_second.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_leap_second.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_leap_second.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_name.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_name.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition_type.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition_type.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/time_zone_transition_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/transaction_registry.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/transaction_registry.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/mysql/user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/performance_schema/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/metrics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/ps_check_lost_instrumentation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_auto_increment_columns.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_object_overview.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_redundant_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/schema_unused_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/session_ssl_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/sys_config.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/sys_config.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/sys_config.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/version.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024ps_digest_avg_latency_distribution.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024ps_schema_table_statistics_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_flattened_keys.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/sys/x@0024waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/undo001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/undo002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/undo003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2hs9K3T1QMEBPu5NBQ6cY9oCSGo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BusinessTripsBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;movefiles&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/markus/Documents/GitHub/biztrips/SpringBootBusinessTripsv2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="BusinessTripsBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="SpringBootBusinessTripsv2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ch.clip.trips.repo.BusinessTripsBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-18.0.2-temurin-18.0.2.1-4caba194b151-16d94e77" />
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ff4e74f-ac3c-483a-973d-8a78b2fc33e2" name="Changes" comment="" />
+      <created>1718371855339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718371855339</updated>
+      <workItem from="1718371857126" duration="128000" />
+      <workItem from="1718372630234" duration="1353000" />
+      <workItem from="1718955313423" duration="666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
