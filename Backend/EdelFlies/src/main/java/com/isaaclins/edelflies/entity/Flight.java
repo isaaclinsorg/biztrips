@@ -35,8 +35,4 @@ public class Flight {
 
 	@NonNull
 	private int planeIDFS;
-
-
-
-
 }
