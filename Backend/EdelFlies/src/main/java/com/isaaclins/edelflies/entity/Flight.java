@@ -22,6 +22,9 @@ public class Flight {
 	private Long number;
 
 	@NonNull
+	private String flightName;
+
+	@NonNull
 	private String cityFrom;
 
 	@NonNull

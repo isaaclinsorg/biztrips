@@ -11,14 +11,14 @@ import lombok.*;
 @Setter
 @Data
 @Entity
-public class Plane {
-
+public class Location {
     @Id
     private int id;
 
     @NonNull
-    private int capacity;
+    private String fullName;
 
     @NonNull
-    private int locationIDFS;
+    private String abbreviation;
+
 }
