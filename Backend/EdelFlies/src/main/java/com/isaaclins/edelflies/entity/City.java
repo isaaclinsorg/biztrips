@@ -11,11 +11,12 @@ import lombok.*;
 @Setter
 @Data
 @Entity
-public class Location {
+public class City {
     @Id
     private int id;
 
     @NonNull
+
     private String fullName;
 
     @NonNull
