@@ -12,27 +12,35 @@ import java.time.LocalDateTime;
 @Setter
 @Data
 @Entity
+@Table(name = "flight")
 public class Flight {
 
 	@Id
 	@NonNull
+	@Column(name = "id")
 	private int id;
 
 	@NonNull
+	@Column(name = "number")
 	private Long number;
 
 	@NonNull
-	private String flightName;
+	@Column(name = "flight_name")
+	private String flight_Name;
 
 	@NonNull
-	private String cityFrom;
+	@Column(name = "city_From")
+	private String city_From;
 
 	@NonNull
-	private String cityTo;
+	@Column(name = "city_To")
+	private String city_To;
 
 	@NonNull
-	private LocalDateTime flightDate;
+	@Column(name = "flight_Date")
+	private LocalDateTime flight_Date;
 
 	@NonNull
-	private int planeIDFS;
+	@Column(name = "IDFSPlane")
+	private int IDFSPlane;
 }

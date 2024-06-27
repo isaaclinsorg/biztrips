@@ -9,17 +9,21 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 @Entity
+@Table(name = "employee")
 public class Employee  {
 
     @Id
     @NonNull
+    @Column(name = "id")
     private int id;
 
     @NonNull
+    @Column(name = "name")
     private String name;
 
     @NonNull
-    private String jobTitle;
+    @Column(name = "job_title")
+    private String job_title;
 
 
 

@@ -1,8 +1,10 @@
 package com.isaaclins.edelflies.entity;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 
 @AllArgsConstructor
@@ -11,14 +13,19 @@ import lombok.*;
 @Setter
 @Data
 @Entity
+@Table(name = "plane")
 public class Plane {
 
     @Id
+    @NonNull
+    @Column(name = "id")
     private int id;
 
     @NonNull
+    @Column(name = "capacity")
     private int capacity;
 
     @NonNull
-    private int locationIDFS;
+    @Column(name = "IDFSLocation")
+    private int IDFSlocation;
 }

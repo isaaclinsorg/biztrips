@@ -9,20 +9,26 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 @Entity
+@Table(name = "user")
 public class User {
 
     @Id
     @NonNull
+    @Column(name = "id")
     private int id;
 
     @NonNull
-    private String firstName;
+    @Column(name = "first_name")
+    private String first_name;
 
     @NonNull
-    private String lastName;
+    @Column(name = "last_name")
+    private String last_name;
 
-    private String flightIDFS;
+    @Column(name = "IDFSFlights")
+    private String IDFSFlights;
 
 
 
 }
+
