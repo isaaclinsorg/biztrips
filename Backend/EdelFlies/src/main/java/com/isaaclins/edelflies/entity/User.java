@@ -26,7 +26,7 @@ public class User {
     private String last_name;
 
     @Column(name = "IDFSFlights")
-    private String IDFSFlights;
+    private int IDFSFlights;
 
 
 
