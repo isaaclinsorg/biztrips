@@ -15,5 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      working-directory: backend/EdelFlies
+    #enter backend and then edelfiles where the Dockerfile is located
+      working-directory: ./backend/edelfiles
       run: docker build . --file Dockerfile --tag biztrips-backend:$(date +%s)
