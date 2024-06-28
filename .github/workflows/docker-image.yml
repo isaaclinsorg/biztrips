@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      working-directory: ./backend/EdelFlies
+      working-directory: backend/EdelFlies
       run: docker build . --file Dockerfile --tag biztrips-backend:$(date +%s)
