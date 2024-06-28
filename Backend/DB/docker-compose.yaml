@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "8080:3306"
+    environment:
+      MYSQL_DATABASE: beispiel_db
+      MYSQL_USER: beispiel_user
+      MYSQL_PASSWORD: starkes_passwort
+      MYSQL_ROOT_PASSWORD: root_passwort
+    networks:
+      - mysql_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root_passwort
+    networks:
+      - mysql_network
+
+networks:
+  mysql_network:
+    name: mysql_network
