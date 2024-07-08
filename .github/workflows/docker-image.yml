@@ -26,7 +26,7 @@ jobs:
         working-directory: ./backend/edel-flies
         run: docker build . --file Dockerfile --tag biztrips-backend:${{ github.sha }}
       - name: Push to Docker Registry
-        run: |
-          echo "DOCKER_PASSWORD=${{ secrets.DOCKERHUB_SECRET }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+        run:
+          docker login -u "${{ secrets.DOCKERHUB_SECRET }}" --password-stdin
           docker push biztrips-backend:${{ github.sha }}
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
