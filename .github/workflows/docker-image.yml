@@ -7,13 +7,26 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      working-directory: ./backend/edel-flies
-      run: docker build . --file Dockerfile --tag biztrips-backend:$(date +%s)
+      - uses: actions/checkout@v4
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Build the Docker image
+        working-directory: ./backend/edel-flies
+        run: docker build . --file Dockerfile --tag biztrips-backend:${{ github.sha }}
+      - name: Push to Docker Registry
+        run: |
+          echo "DOCKER_PASSWORD=${{ secrets.DOCKERHUB_SECRET }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+          docker push biztrips-backend:${{ github.sha }}
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
