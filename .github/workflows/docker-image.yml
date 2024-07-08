@@ -22,11 +22,14 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_SECRET }}
       - name: Build the Docker image
         working-directory: ./backend/edel-flies
         run: docker build . --file Dockerfile --tag biztrips-backend:${{ github.sha }}
       - name: Push to Docker Registry
-        run: |
-          echo "${{ secrets.DOCKERHUB_SECRET }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-          docker push biztrips-backend:bfb12120d99b63ca3cb6bd2deba34c655dff88b6
+        run: docker push biztrips-backend:${{ github.sha }}
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
