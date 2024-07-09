@@ -27,18 +27,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_SECRET }}
-      - name: Login to Amazon ERC
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
       - name: Build the Docker image
         working-directory: ./backend/edel-flies
-        run: docker build . --file Dockerfile --tag patrickpilotti/biztrips-backend:${{ github.sha }} --tag 187188280449.dkr.ecr.us-east-1.amazonaws.com/biztrips-backend:${{ github.sha }}
+        run: docker build . --file Dockerfile --tag patrickpilotti/biztrips-backend:${{ github.sha }}
       - name: Push to Docker Registry
         run: docker push patrickpilotti/biztrips-backend:${{ github.sha }}
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      - name: Push to Amazon ECR
-        run: docker push 187188280449.dkr.ecr.us-east-1.amazonaws.com/biztrips-backend:${{ github.sha }}
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
