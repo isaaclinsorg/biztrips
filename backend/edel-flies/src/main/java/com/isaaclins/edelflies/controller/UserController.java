@@ -19,8 +19,8 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable Long id){
-        return userRepository.findById(Math.toIntExact(id));
+    public Optional<User> getUserById(@PathVariable int id){
+        return userRepository.findById(id);
     }
 
     @PostMapping("/")
@@ -42,18 +42,14 @@ public class UserController {
                     return userRepository.save(updatedUser);
                 });
     }
+
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable Long id){
-        userRepository.deleteById(Math.toIntExact(id));
+    public void deleteUser(@PathVariable int id){
+        userRepository.deleteById(id);
     }
-    
+
     @GetMapping("/search/name/{name}")
     public List<User> searchUsersByName(@PathVariable String name){
         return userRepository.findByName(name);
-    }
-    
-    @GetMapping("/search/profession/{profession}")
-    public List<User> searchUsersByProfession(@PathVariable String profession){
-        return userRepository.findByProfession(profession);
     }
 }
