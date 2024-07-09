@@ -10,6 +10,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/cities")
 public class CityController {
+
     @Autowired
     private CityRepository cityRepository;
 
@@ -36,4 +37,21 @@ public class CityController {
             return cityRepository.findAll();
         }
     }
+    @PostMapping("/")
+    public City createCity(@RequestBody City city) {
+        return cityRepository.save(city);
+    }
+
+    @PutMapping("/{id}")
+    public City updateCity(@PathVariable int id, @RequestBody City city) {
+        city.setId(id);
+        return cityRepository.save(city);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteCity(@PathVariable int id) {
+        cityRepository.deleteById(id);
+    }
+
+
 }

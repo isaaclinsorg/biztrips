@@ -21,4 +21,5 @@ public interface CityRepository extends JpaRepository<City, Integer> {
 
     @Query(value = "select * from city where abbreviation = ?1", nativeQuery = true)
     List<City> findByAbbreviation(String abbreviation);
+
 }
