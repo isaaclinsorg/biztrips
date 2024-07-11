@@ -1,4 +1,4 @@
-name: backend workflow
+name: Backend Workflow
 
 on:
   push:
