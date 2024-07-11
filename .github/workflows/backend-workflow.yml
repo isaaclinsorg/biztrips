@@ -37,5 +37,4 @@ jobs:
         working-directory: ./backend/edel-flies
         run: docker build . --file Dockerfile --tag patrickpilotti/biztrips-backend:${{ github.sha }}
       - name: Push to Docker Registry
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: docker push patrickpilotti/biztrips-backend:${{ github.sha }}
