@@ -1,12 +1,14 @@
-name: Frontend Docker Image CI
+name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - 'frontend/**'
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - 'frontend/**'
   workflow_dispatch:
@@ -14,8 +16,9 @@ on:
       - main
 
 jobs:
-  build-and-push-frontend:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -25,25 +28,17 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('frontend/**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build and push Frontend Docker image
-        working-directory: ./frontend
+      - name: Install dependencies
         run: |
-          docker build . --file Dockerfile --tag patrickpilotti/biztrips-frontend:${{ github.sha }}
+          cd frontend
+          npm install
 
-      - name: Push Frontend Docker image
+      - name: Build the Docker image
         run: |
-          docker push patrickpilotti/biztrips-frontend:${{ github.sha }}
+          docker build frontend -t patrickpilotti/biztrips-frontend:${{ github.sha }}
+
+      - name: Push to Docker Hub
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_SECRET }}
+          docker push patrickpilotti/biztrips-frontend:${{ github.sha }}
