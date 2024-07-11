@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './ticket-list.component.html',
   styleUrls: ['./ticket-list.component.css']
 })
-export class  TicketListComponent implements OnInit {
+export class TicketListComponent implements OnInit {
   tickets: any;
   constructor(private http: HttpClient) { }
   ngOnInit() {
@@ -18,5 +18,8 @@ export class  TicketListComponent implements OnInit {
       alert(data.message);
       this.ngOnInit();
     });
+
+
+    this.http.get('http://localhost:3000/', )
   }
 }
