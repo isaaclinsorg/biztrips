@@ -16,7 +16,16 @@ const fs = require('fs');
 let isUsingFakeData = false;
 
 let fakedata = [];
+console.log('loading fake data');
+fs.readFile('./mysql/fakedata/fakedata.json', 'utf8', (err, data) => {
+    if (err) {
+        console.error('error:',err);
 
+        return;
+    }
+    console.log('fakedata loaded')
+    fakedata = JSON.parse(data);
+});
 
 
 
@@ -78,13 +87,10 @@ app.get('/users', (_, res) => {
     }
 });
 
-
-
-
 app.get('/users/:id', (req, res) => {
     const userId = req.params.id;
     if (isUsingFakeData) {
-        const user = fakedata.find(user => user.id === parseInt(userId));
+        const user = fakedata['user'][0].find(user => user.id === parseInt(userId));
         if (user) {
             res.json(user);
         } else {
