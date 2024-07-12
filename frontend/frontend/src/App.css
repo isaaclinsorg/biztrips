@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   color: #364147;
-  background-color: #fff;
+  background-color: #3c009d;
 }
 
 #root {
@@ -56,7 +56,7 @@ header li {
 }
 
 #detail img {
-  max-height: 400;
+  max-height: 400px;
 }
 
 #price {

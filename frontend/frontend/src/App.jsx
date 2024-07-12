@@ -10,6 +10,7 @@ import Cart from "./Cart";
 import Checkout from "./Checkout";
 import TripList from "./components/TripList";
 import tripsReducer from "./components/tripsReducer";
+import LoginSignup from "./components/LoginSignup/LoginSignup";
 
 export default function App() {
   const [wishlist, dispatch] = useReducer(tripsReducer, []);
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/trips" element={<TripList dispatch={dispatch} />} />
+            <Route path="/login" element={<LoginSignup/>} />
             {/* <Route
               path="/wishlist"
               element={<Wishlist wishlist={
