@@ -1,5 +1,14 @@
+/*
+*
+* Dear programmer:
+* When I wrote this code, only god and I knew how it worked.
+* Now, only god knows it!
+* Therefore, if you are trying to optimize this routine and it fails (most surely), please increase this counter as a warning for the next person:
+*/
+total_hours_wasted_here = 4
+
 const express = require('express');
-const mysql = require('mysql');
+// const mysql = require('mysql'); // TODO: uncomment when done, please
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const app = express();
@@ -7,34 +16,6 @@ const fs = require('fs');
 let isUsingFakeData = false;
 
 let fakedata = [];
-
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '220563',
-    database: 'edelflies',
-});
-connection.query('SELECT 1', (error) => {
-    if (error) {
-        isUsingFakeData = true;
-        // console.error(error);
-        console.log('MYSQL CONNETION FAILED!\nUsing fake data instead');
-
-fs.readFile('./mysql/fakedata/fakedata.json', 'utf8', (err, data) => {
-    if (err) {
-        console.error('error:',err);
-        console.log('fakedata:', fakedata);
-        return;
-    }
-    fakedata = JSON.parse(data);
-
-});
-    } else {
-        console.log('Connected to the MySQL server.');
-        
-    }
-});
-connection.end();
 
 
 
@@ -105,17 +86,14 @@ app.get('/users', (_, res) => {
 app.get('/users/:id', (req, res) => {
     const userId = req.params.id;
     if (isUsingFakeData) {
-        const user = fakedata[0].user.find(user => user.id === userId);
+        const user = fakedata.find(user => user.id === parseInt(userId));
         if (user) {
             res.json(user);
         } else {
             res.status(404).json({ message: "User not found." });
         }
-    } else {
-        res.json({ message: "This route needs to be implemented." }); // TODO: Implement the /users/:id GET with mysql
     }
 });
-
 
 
 
