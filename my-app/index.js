@@ -17,7 +17,7 @@ let isUsingFakeData = true; //TODO: change this to false when done, please. Or n
 
 let fakedata = [];
 console.log('loading fake data');
-fs.readFile('./mysql/fakedata/fakedatasmall.json', 'utf8', (err, data) => {
+fs.readFile('./mysql/fakedata/fakedata.json', 'utf8', (err, data) => {
     if (err) {
         console.error('error:',err);
 
@@ -88,18 +88,17 @@ app.get('/users', (_, res) => {
 });
 
 app.get('/users/:id', (req, res) => {
-    const userId = req.params.id;
+    const userId = parseInt(req.params.id);
     if (isUsingFakeData) {
-        const user = fakedata['user'][0].find(user => user.id === parseInt(userId));
+        const users = fakedata.user.flat(); // Add the .flat() method
+        const user = users.find(data => data.id === userId);
         if (user) {
             res.json(user);
         } else {
-            res.status(404).json({ message: "User not found." });
+            res.status(404).json({ error: 'User not found' });
         }
     }
 });
-
-
 
 
 
