@@ -560,6 +560,176 @@ app.delete('/planes/:id', (req, res) => {
 });
 
 
+/**
+ * @swagger
+ * /employees:
+ *   get:
+ *     summary: Get all employees
+ *     tags:
+ *       - employees
+ *     responses:
+ *       200:
+ *         description: Returns an array of employees
+ *       500:
+ *         description: Error retrieving employees
+ */
+app.get('/employees', (req, res) => {
+    res.json(employeesTable);
+});
+
+/**
+ * @swagger
+ * /employees:
+ *   post:
+ *     summary: Create a new employee
+ *     tags:
+ *       - employees
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Employee'
+ *     responses:
+ *       201:
+ *         description: Employee created successfully
+ *       400:
+ *         description: Missing required fields
+ *       500:
+ *         description: Error saving employee data
+ */
+app.post('/employees', (req, res) => {
+    const newEmployee = req.body;
+    if (!newEmployee.name || !newEmployee.job_title) {
+        res.status(400).send('Missing required fields');
+        return;
+    }
+    const newId = employeesTable.length + 1;
+    newEmployee.id = newId;
+    employeesTable.push(newEmployee);
+    fs.writeFile('./data/employees.json', JSON.stringify(employeesTable), (err) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Error saving employee data');
+        } else {
+            res.status(201).send('Employee data saved successfully');
+        }
+    });
+});
+
+/**
+ * @swagger
+ * /employees/{id}:
+ *   get:
+ *     summary: Get an employee by ID
+ *     tags:
+ *       - employees
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Returns the employee with the specified ID
+ *       404:
+ *         description: Employee not found
+ */
+app.get('/employees/:id', (req, res) => {
+    const employeeId = parseInt(req.params.id);
+    const employee = employeesTable.find(employee => employee.id === employeeId);
+    if (employee) {
+        res.json(employee);
+    } else {
+        res.status(404).send('Employee not found');
+    }
+});
+
+/**
+ * @swagger
+ * /employees/{id}:
+ *   put:
+ *     summary: Update an employee by ID
+ *     tags:
+ *       - employees
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Employee'
+ *     responses:
+ *       200:
+ *         description: Employee updated successfully
+ *       404:
+ *         description: Employee not found
+ *       500:
+ *         description: Error saving employee data
+ */
+app.put('/employees/:id', (req, res) => {
+    const employeeId = parseInt(req.params.id);
+    const updatedEmployee = req.body;
+    const employeeIndex = employeesTable.findIndex(employee => employee.id === employeeId);
+    if (employeeIndex !== -1) {
+        employeesTable[employeeIndex] = updatedEmployee;
+        fs.writeFile('./data/employees.json', JSON.stringify(employeesTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving employee data');
+            } else {
+                res.status(200).send('Employee data updated successfully');
+            }
+        });
+    } else {
+        res.status(404).send('Employee not found');
+    }
+});
+
+/**
+ * @swagger
+ * /employees/{id}:
+ *   delete:
+ *     summary: Delete an employee by ID
+ *     tags:
+ *       - employees
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Employee deleted successfully
+ *       404:
+ *         description: Employee not found
+ *       500:
+ *         description: Error saving employee data
+ */
+app.delete('/employees/:id', (req, res) => {
+    const employeeId = parseInt(req.params.id);
+    const employeeIndex = employeesTable.findIndex(employee => employee.id === employeeId);
+    if (employeeIndex !== -1) {
+        employeesTable.splice(employeeIndex, 1);
+        fs.writeFile('./data/employees.json', JSON.stringify(employeesTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving employee data');
+            } else {
+                res.status(200).send('Employee deleted successfully');
+            }
+        });
+    } else {
+        res.status(404).send('Employee not found');
+    }
+});
 
 
 
