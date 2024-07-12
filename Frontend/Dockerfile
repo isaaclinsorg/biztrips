@@ -1,29 +1,23 @@
-# Use an official Node.js runtime as the base image
-FROM node:14-alpine as build
-
-# Set the working directory in the container
+# pull official base image
+FROM node:18.12.1-alpine
+# add a bash shell to the image
+RUN apk add --no-cache bash
+# set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+RUN echo "Path: $PATH"
+# install app dependencies
+COPY package.json ./
+#COPY package-lock.json ./
+#RUN npm install --silent
+#RUN npm install react-scripts@5.0.1 -g --silent
+RUN yarn
+# add All to app
+COPY . ./
 
-# Install dependencies
-RUN npm install --silent
-
-# Copy the entire project to the working directory
-COPY . .
-
-# Build the React app
-RUN npm run build
-
-# Stage 2: Serve the app with Nginx
-FROM nginx:alpine
-
-# Copy build output from the previous stage to Nginx public folder
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port 80 to the outside world
-EXPOSE 80
-
-# Start Nginx server to serve the static files
-CMD ["nginx", "-g", "daemon off;"]
+# start app
+# CMD ["npm", "start"]
+# Best-Practice with ENTRYPOINT!
+ENTRYPOINT ["yarn", "start"]
