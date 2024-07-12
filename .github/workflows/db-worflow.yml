@@ -31,3 +31,6 @@ jobs:
         working-directory: ./backend/edel-flies/DB
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+
+      - name: Push to Docker Registry
+        run: docker push patrickpilotti/db-biztrips:${{ github.sha }}
