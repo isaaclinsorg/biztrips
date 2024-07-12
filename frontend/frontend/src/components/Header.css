@@ -1,11 +1,11 @@
 .header-container {
-    background-color: #f8f9fa; /* Heller Hintergrund, kann nach Belieben geändert werden */
-    padding: 10px 20px; /* Abstand innerhalb des Containers */
+    background-color: #f8f9fa;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #ddd; /* Optionale Umrandung */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionaler Schatten */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -13,25 +13,27 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    align-items: center; /* Elemente vertikal zentrieren */
 }
 
 .navbar li {
-    margin-right: 20px; /* Abstand zwischen den Elementen */
+    margin-right: 20px;
 }
 
 #login {
-    margin-left: auto; /* Schiebt das Element nach rechts */
+    margin-left: auto;
 }
 
 .navbar a {
-    text-decoration: none; /* Entfernt die Standard-Unterstreichung von Links */
-    color: black; /* Farbe der Textlinks */
+    text-decoration: none;
+    color: black;
 }
 
 .navbar a:hover {
-    color: blue; /* Farbe ändern, wenn der Mauszeiger über dem Link schwebt */
+    color: blue;
 }
 
-.navbar a:active {
-    color: red; /* Farbe ändern, wenn der Link aktiv ist */
+.logo {
+    width: 100px;
+    height: auto; /* Höhe automatisch anpassen */
 }
