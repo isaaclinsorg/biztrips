@@ -24,14 +24,38 @@ const options = {
 const swaggerSpec = swaggerJsdoc(options);
 app.use('/swagger-ui', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-
-
-
-
-
+/**
+ * @swagger
+ * /users:
+ *   get:
+ *     summary: Get all users
+ *     responses:
+ *       200:
+ *         description: Returns an array of users
+ *       500:
+ *         description: Error retrieving users
+ */
 app.get('/users', (req, res) => {
     res.json(usersTable);
 });
+
+/**
+ * @swagger
+ * /users/{id}:
+ *   get:
+ *     summary: Get a user by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Returns the user with the specified ID
+ *       404:
+ *         description: User not found
+ */
 app.get('/users/:id', (req, res) => {
     const userId = parseInt(req.params.id);
     const user = usersTable.find(user => user.id === userId);
@@ -42,8 +66,25 @@ app.get('/users/:id', (req, res) => {
     }
 });
 
-
-
+/**
+ * @swagger
+ * /users:
+ *   post:
+ *     summary: Create a new user
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/User'
+ *     responses:
+ *       201:
+ *         description: User created successfully
+ *       400:
+ *         description: Missing required fields
+ *       500:
+ *         description: Error saving user data
+ */
 app.post('/users', (req, res) => {
     const newUser = req.body;
     if (!newUser.first_name || !newUser.last_name || !newUser.email || !newUser.password) {
@@ -69,6 +110,31 @@ app.post('/users', (req, res) => {
     });
 });
 
+/**
+ * @swagger
+ * /users/{id}:
+ *   put:
+ *     summary: Update a user by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/User'
+ *     responses:
+ *       200:
+ *         description: User updated successfully
+ *       404:
+ *         description: User not found
+ *       500:
+ *         description: Error saving user data
+ */
 app.put('/users/:id', (req, res) => {
     const userId = parseInt(req.params.id);
     const updatedUser = req.body;
@@ -94,6 +160,25 @@ app.put('/users/:id', (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /users/{id}:
+ *   delete:
+ *     summary: Delete a user by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: User deleted successfully
+ *       404:
+ *         description: User not found
+ *       500:
+ *         description: Error saving user data
+ */
 app.delete('/users/:id', (req, res) => {
     const userId = parseInt(req.params.id);
     const userIndex = usersTable.findIndex(user => user.id === userId);
@@ -111,6 +196,7 @@ app.delete('/users/:id', (req, res) => {
         res.status(404).send('User not found');
     }
 });
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
