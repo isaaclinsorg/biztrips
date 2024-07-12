@@ -87,6 +87,8 @@ app.get('/users/:id', (req, res) => {
         const user = fakedata.find(user => user.id === parseInt(userId));
         if (user) {
             res.json(user);
+        } else {
+            res.status(404).json({ message: "User not found." });
         }
     }
 });
