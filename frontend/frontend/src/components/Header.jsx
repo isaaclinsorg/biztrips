@@ -22,7 +22,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink activeStyle={activeStyle} to="/wishlist">
+              <NavLink activeStyle={activeStyle} to="/cart">
                 Warenkorb
               </NavLink>
             </li>
