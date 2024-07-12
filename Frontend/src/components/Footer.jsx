@@ -3,11 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <p>
-        This site is created for demonstrative purposes only and does not offer
-        any real products or services.
-      </p>
-      <p>&copy; BBW 2024</p>
+      <p>&copy; BBW M426 Isaac Lins, Eris Jakupi, Patrick Pilotti 2024</p>
     </footer>
   );
 }
