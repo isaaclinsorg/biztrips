@@ -12,13 +12,6 @@ Dieses Projekt wurde mit den folgenden Technologien entwickelt:
 - **React.js**: JavaScript-Framework für den Aufbau der Benutzeroberfläche.
 **Java**: Im Backend haben wir um die API-Calls zu machen Java benutzt.
 
-## Zusätzliche Technologien
-
-Zusätzlich zu den Haupttechnologien haben wir die folgenden Bibliotheken verwendet:
-
-- **Bootstrap**: Für vorgefertigte UI-Komponenten und responsives Design.
-- **Tailwind CSS**: Für ein Utility-First CSS-Framework und flexible Anpassungen.
-
 ## Erste Schritte
 
 Folgen Sie diesen Schritten, um das Projekt lokal zu installieren und zu starten:
