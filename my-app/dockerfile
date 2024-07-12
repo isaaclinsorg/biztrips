@@ -1,0 +1,13 @@
+# Use the official MySQL image
+FROM mysql:latest
+
+# Set environment variables
+ENV MYSQL_DATABASE=edelflies
+ENV MYSQL_ROOT_PASSWORD=220563
+
+# Add the schema and data scripts
+ADD mysql/schema.sql /docker-entrypoint-initdb.d
+ADD mysql/data.sql /docker-entrypoint-initdb.d
+
+# Expose port 3306
+EXPOSE 3306

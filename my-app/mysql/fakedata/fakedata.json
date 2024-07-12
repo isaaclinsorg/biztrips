@@ -1,0 +1,896 @@
+[{
+    "city": [
+        {
+            "id": 1,
+            "full_name": "Zurich",
+            "abbreviation": "ZRH"
+        },
+        {
+            "id": 2,
+            "full_name": "Geneva",
+            "abbreviation": "GVA"
+        },
+        {
+            "id": 3,
+            "full_name": "Munich",
+            "abbreviation": "MUC"
+        },
+        {
+            "id": 4,
+            "full_name": "Paris",
+            "abbreviation": "CDG"
+        },
+        {
+            "id": 5,
+            "full_name": "London",
+            "abbreviation": "LHR"
+        },
+        {
+            "id": 6,
+            "full_name": "New York",
+            "abbreviation": "JFK"
+        },
+        {
+            "id": 7,
+            "full_name": "Tokyo",
+            "abbreviation": "HND"
+        },
+        {
+            "id": 8,
+            "full_name": "Sydney",
+            "abbreviation": "SYD"
+        },
+        {
+            "id": 9,
+            "full_name": "Dubai",
+            "abbreviation": "DXB"
+        },
+        {
+            "id": 10,
+            "full_name": "Singapore",
+            "abbreviation": "SIN"
+        },
+        {
+            "id": 11,
+            "full_name": "Berlin",
+            "abbreviation": "BER"
+        },
+        {
+            "id": 12,
+            "full_name": "Rome",
+            "abbreviation": "FCO"
+        },
+        {
+            "id": 13,
+            "full_name": "Madrid",
+            "abbreviation": "MAD"
+        },
+        {
+            "id": 14,
+            "full_name": "Barcelona",
+            "abbreviation": "BCN"
+        },
+        {
+            "id": 15,
+            "full_name": "Amsterdam",
+            "abbreviation": "AMS"
+        },
+        {
+            "id": 16,
+            "full_name": "Vienna",
+            "abbreviation": "VIE"
+        },
+        {
+            "id": 17,
+            "full_name": "Athens",
+            "abbreviation": "ATH"
+        },
+        {
+            "id": 18,
+            "full_name": "Moscow",
+            "abbreviation": "SVO"
+        },
+        {
+            "id": 19,
+            "full_name": "Cairo",
+            "abbreviation": "CAI"
+        },
+        {
+            "id": 20,
+            "full_name": "Beijing",
+            "abbreviation": "PEK"
+        }
+    ],
+    "employee": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "job_title": "Pilot"
+        },
+        {
+            "id": 2,
+            "name": "Mary Johnson",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id": 3,
+            "name": "Robert Brown",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id": 4,
+            "name": "Emily Davis",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id": 5,
+            "name": "Michael Wilson",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id": 6,
+            "name": "Sarah Thompson",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id": 7,
+            "name": "Daniel Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id": 8,
+            "name": "Jessica Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id": 9,
+            "name": "Andrew Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":10,
+            "name": "Olivia Brown",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id":11,
+            "name": "William Smith",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id":12,
+            "name": "Sophia Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id":13,
+            "name": "James Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id":14,
+            "name": "Ava Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":15,
+            "name": "Liam Brown",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id":16,
+            "name": "Isabella Smith",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id":17,
+            "name": "Benjamin Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id":18,
+            "name": "Mia Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id":19,
+            "name": "Ethan Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":10,
+            "name": "Charlotte Brown",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id":11,
+            "name": "Alexander Smith",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id":12,
+            "name": "Harper Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id":13,
+            "name": "Sebastian Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id":14,
+            "name": "Amelia Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":15,
+            "name": "Jackson Brown",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id":16,
+            "name": "Luna Smith",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id":17,
+            "name": "Aiden Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id":18,
+            "name": "Layla Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id":19,
+            "name": "Lucas Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":20,
+            "name": "Zoe Brown",
+            "job_title": "Aircraft Mechanic"
+        },
+        {
+            "id":21,
+            "name": "Carter Smith",
+            "job_title": "Flight Attendant"
+        },
+        {
+            "id":22,
+            "name": "Grace Johnson",
+            "job_title": "Pilot"
+        },
+        {
+            "id":23,
+            "name": "Henry Davis",
+            "job_title": "Ground Crew"
+        },
+        {
+            "id":24,
+            "name": "Victoria Wilson",
+            "job_title": "Air Traffic Controller"
+        },
+        {
+            "id":25,
+            "name": "Gabriel Brown",
+            "job_title": "Aircraft Mechanic"
+        }
+    ],
+    "plane": [
+        {
+            "id": 1,
+            "capacity": 150,
+            "IDFSCity": 1
+        },
+        {
+            "id": 2,
+            "capacity": 200,
+            "IDFSCity": 2
+        },
+        {
+            "id": 3,
+            "capacity": 180,
+            "IDFSCity": 3
+        },
+        {
+            "id": 4,
+            "capacity": 250,
+            "IDFSCity": 4
+        },
+        {
+            "id": 5,
+            "capacity": 220,
+            "IDFSCity": 5
+        },
+        {
+            "id": 6,
+            "capacity": 190,
+            "IDFSCity": 6
+        },
+        {
+            "id": 7,
+            "capacity": 210,
+            "IDFSCity": 7
+        },
+        {
+            "id": 8,
+            "capacity": 230,
+            "IDFSCity": 8
+        },
+        {
+            "id": 9,
+            "capacity": 170,
+            "IDFSCity": 9
+        },
+        {
+            "id": 10,
+            "capacity": 240,
+            "IDFSCity": 10
+        },
+        {
+            "id": 11,
+            "capacity": 200,
+            "IDFSCity": 11
+        },
+        {
+            "id": 12,
+            "capacity": 180,
+            "IDFSCity": 12
+        },
+        {
+            "id": 13,
+            "capacity": 220,
+            "IDFSCity": 13
+        },
+        {
+            "id": 14,
+            "capacity": 250,
+            "IDFSCity": 14
+        },
+        {
+            "id": 15,
+            "capacity": 190,
+            "IDFSCity": 15
+        },
+        {
+            "id": 16,
+            "capacity": 210,
+            "IDFSCity": 16
+        },
+        {
+            "id": 17,
+            "capacity": 230,
+            "IDFSCity": 17
+        },
+        {
+            "id": 18,
+            "capacity": 170,
+            "IDFSCity": 18
+        },
+        {
+            "id": 19,
+            "capacity": 240,
+            "IDFSCity": 19
+        },
+        {
+            "id": 320,
+            "capacity": 200,
+            "IDFSCity": 20
+        }
+    ],
+    "user": [
+        [
+            {
+                "id": 1,
+                "first_name": "Alice",
+                "last_name": "Johnson",
+                "email": "alice@example.com",
+                "password": "password123"
+            },
+            {
+                "id": 2,
+                "first_name": "Bob",
+                "last_name": "Miller",
+                "email": "bob@example.com",
+                "password": "password456"
+            },
+            {
+                "id": 3,
+                "first_name": "Carol",
+                "last_name": "Lee",
+                "email": "carol@example.com",
+                "password": "password789"
+            },
+            {
+                "id": 4,
+                "first_name": "David",
+                "last_name": "Wilson",
+                "email": "david@example.com",
+                "password": "passwordabc"
+            },
+            {
+                "id": 5,
+                "first_name": "Emma",
+                "last_name": "Davis",
+                "email": "emma@example.com",
+                "password": "passworddef"
+            },
+            {
+                "id": 6,
+                "first_name": "Frank",
+                "last_name": "Smith",
+                "email": "frank@example.com",
+                "password": "passwordghi"
+            },
+            {
+                "id": 7,
+                "first_name": "Grace",
+                "last_name": "Johnson",
+                "email": "grace@example.com",
+                "password": "passwordjkl"
+            },
+            {
+                "id": 8,
+                "first_name": "Henry",
+                "last_name": "Miller",
+                "email": "henry@example.com",
+                "password": "passwordmno"
+            },
+            {
+                "id": 9,
+                "first_name": "Isabella",
+                "last_name": "Lee",
+                "email": "isabella@example.com",
+                "password": "passwordpqr"
+            },
+            {
+                "id": 10,
+                "first_name": "Jack",
+                "last_name": "Wilson",
+                "email": "jack@example.com",
+                "password": "passwordstu"
+            },
+            {
+                "id":1,
+                "first_name": "Kate",
+                "last_name": "Davis",
+                "email": "kate@example.com",
+                "password": "passwordvwx"
+            },
+            {
+                "id": 12,
+                "first_name": "Liam",
+                "last_name": "Smith",
+                "email": "liam@example.com",
+                "password": "passwordyz1"
+            },
+            {
+                "id": 13,
+                "first_name": "Mia",
+                "last_name": "Johnson",
+                "email": "mia@example.com",
+                "password": "password234"
+            },
+            {
+                "id": 14,
+                "first_name": "Noah",
+                "last_name": "Miller",
+                "email": "noah@example.com",
+                "password": "password567"
+            },
+            {
+                "id": 15,
+                "first_name": "Olivia",
+                "last_name": "Lee",
+                "email": "olivia@example.com",
+                "password": "password890"
+            },
+            {
+                "id": 16,
+                "first_name": "Patrick",
+                "last_name": "Wilson",
+                "email": "patrick@example.com",
+                "password": "passwordabc2"
+            },
+            {
+                "id": 17,
+                "first_name": "Quinn",
+                "last_name": "Davis",
+                "email": "quinn@example.com",
+                "password": "passworddef3"
+            },
+            {
+                "id": 18,
+                "first_name": "Ryan",
+                "last_name": "Smith",
+                "email": "ryan@example.com",
+                "password": "passwordghi4"
+            },
+            {
+                "id": 19,
+                "first_name": "Sophia",
+                "last_name": "Johnson",
+                "email": "sophia@example.com",
+                "password": "passwordjkl5"
+            },
+            {
+                "id": 20,
+                "first_name": "Thomas",
+                "last_name": "Miller",
+                "email": "thomas@example.com",
+                "password": "passwordmno6"
+            },
+            {
+                "id": 21,
+                "first_name": "Uma",
+                "last_name": "Lee",
+                "email": "uma@example.com",
+                "password": "passwordpqr7"
+            },
+            {
+                "id": 22,
+                "first_name": "Vincent",
+                "last_name": "Wilson",
+                "email": "vincent@example.com",
+                "password": "passwordstu8"
+            },
+            {
+                "id": 23,
+                "first_name": "Willow",
+                "last_name": "Davis",
+                "email": "willow@example.com",
+                "password": "passwordvwx9"
+            },
+            {
+                "id": 24,
+                "first_name": "Xavier",
+                "last_name": "Smith",
+                "email": "xavier@example.com",
+                "password": "passwordyz10"
+            },
+            {
+                "id": 25,
+                "first_name": "Yara",
+                "last_name": "Johnson",
+                "email": "yara@example.com",
+                "password": "password23411"
+            },
+            {
+                "id": 26,
+                "first_name": "Zachary",
+                "last_name": "Miller",
+                "email": "zachary@example.com",
+                "password": "password56712"
+            },
+            {
+                "id": 27,
+                "first_name": "Abigail",
+                "last_name": "Lee",
+                "email": "abigail@example.com",
+                "password": "password89013"
+            },
+            {
+                "id": 28,
+                "first_name": "Benjamin",
+                "last_name": "Wilson",
+                "email": "benjamin@example.com",
+                "password": "passwordabc14"
+            },
+            {
+                "id": 29,
+                "first_name": "Charlotte",
+                "last_name": "Davis",
+                "email": "charlotte@example.com",
+                "password": "passworddef15"
+            },
+            {
+                "id": 30,
+                "first_name": "Daniel",
+                "last_name": "Smith",
+                "email": "daniel@example.com",
+                "password": "passwordghi16"
+            }
+        ]
+    ],
+    "flight": [
+        {
+            "id":1,
+            "number": 12345,
+            "flight_name": "EF123",
+            "city_From": 1,
+            "city_To": 2,
+            "flight_Date": "2024-06-28 10:00:00",
+            "IDFSPlane": 1
+        },
+        {
+            "id":2,
+            "number": 67890,
+            "flight_name": "EF678",
+            "city_From": 2,
+            "city_To": 1,
+            "flight_Date": "2024-06-29 14:30:00",
+            "IDFSPlane": 2
+        },
+        {
+            "id":3,
+            "number": 54321,
+            "flight_name": "EF321",
+            "city_From": 3,
+            "city_To": 4,
+            "flight_Date": "2024-07-01 08:45:00",
+            "IDFSPlane": 3
+        },
+        {
+            "id":4,
+            "number": 98765,
+            "flight_name": "EF765",
+            "city_From": 4,
+            "city_To": 3,
+            "flight_Date": "2024-07-02 16:15:00",
+            "IDFSPlane": 4
+        },
+        {
+            "id":5,
+            "number": 24680,
+            "flight_name": "EF680",
+            "city_From": 5,
+            "city_To": 1,
+            "flight_Date": "2024-07-03 12:00:00",
+            "IDFSPlane": 5
+        },
+        {
+            "id":6,
+            "number": 13579,
+            "flight_name": "EF975",
+            "city_From": 1,
+            "city_To": 3,
+            "flight_Date": "2024-07-04 09:30:00",
+            "IDFSPlane": 6
+        },
+        {
+            "id":7,
+            "number": 86420,
+            "flight_name": "EF468",
+            "city_From": 2,
+            "city_To": 4,
+            "flight_Date": "2024-07-05 15:45:00",
+            "IDFSPlane": 7
+        },
+        {
+            "id":8,
+            "number": 97531,
+            "flight_name": "EF579",
+            "city_From": 3,
+            "city_To": 1,
+            "flight_Date": "2024-07-06 11:30:00",
+            "IDFSPlane": 8
+        },
+        {
+            "id":9,
+            "number": 86420,
+            "flight_name": "EF468",
+            "city_From": 4,
+            "city_To": 2,
+            "flight_Date": "2024-07-07 17:15:00",
+            "IDFSPlane": 9
+        },
+        {
+            "id": 10,
+            "number": 13579,
+            "flight_name": "EF975",
+            "city_From": 5,
+            "city_To": 3,
+            "flight_Date": "2024-07-08 13:00:00",
+            "IDFSPlane": 10
+        },
+        {
+            "id": 11,
+            "number": 24680,
+            "flight_name": "EF680",
+            "city_From": 1,
+            "city_To": 4,
+            "flight_Date": "2024-07-09 10:45:00",
+            "IDFSPlane": 11
+        },
+        {
+            "id": 12,
+            "number": 98765,
+            "flight_name": "EF765",
+            "city_From": 2,
+            "city_To": 5,
+            "flight_Date": "2024-07-10 16:30:00",
+            "IDFSPlane": 12
+        },
+        {
+            "id": 13,
+            "number": 54321,
+            "flight_name": "EF321",
+            "city_From": 3,
+            "city_To": 1,
+            "flight_Date": "2024-07-11 12:15:00",
+            "IDFSPlane": 13
+        },
+        {
+            "id": 14,
+            "number": 67890,
+            "flight_name": "EF678",
+            "city_From": 4,
+            "city_To": 2,
+            "flight_Date": "2024-07-12 18:00:00",
+            "IDFSPlane": 14
+        },
+        {
+            "id": 15,
+            "number": 12345,
+            "flight_name": "EF123",
+            "city_From": 5,
+            "city_To": 3,
+            "flight_Date": "2024-07-13 13:45:00",
+            "IDFSPlane": 15
+        },
+        {
+            "id": 16,
+            "number": 86420,
+            "flight_name": "EF468",
+            "city_From": 1,
+            "city_To": 5,
+            "flight_Date": "2024-07-14 11:30:00",
+            "IDFSPlane": 16
+        },
+        {
+            "id": 17,
+            "number": 13579,
+            "flight_name": "EF975",
+            "city_From": 2,
+            "city_To": 1,
+            "flight_Date": "2024-07-15 17:15:00",
+            "IDFSPlane": 17
+        },
+        {
+            "id": 18,
+            "number": 24680,
+            "flight_name": "EF680",
+            "city_From": 3,
+            "city_To": 2,
+            "flight_Date": "2024-07-16 14:00:00",
+            "IDFSPlane": 18
+        },
+        {
+            "id": 19,
+            "number": 98765,
+            "flight_name": "EF765",
+            "city_From": 4,
+            "city_To": 3,
+            "flight_Date": "2024-07-17 19:45:00",
+            "IDFSPlane": 19
+        },
+        {
+            "id": 20,
+            "number": 54321,
+            "flight_name": "EF321",
+            "city_From": 5,
+            "city_To": 4,
+            "flight_Date": "2024-07-18 15:30:00",
+            "IDFSPlane": 20
+        },
+        {
+            "id": 21,
+            "number": 67890,
+            "flight_name": "EF678",
+            "city_From": 1,
+            "city_To": 5,
+            "flight_Date": "2024-07-19 11:15:00",
+            "IDFSPlane": 21
+        },
+        {
+            "id": 22,
+            "number": 12345,
+            "flight_name": "EF123",
+            "city_From": 2,
+            "city_To": 1,
+            "flight_Date": "2024-07-20 17:00:00",
+            "IDFSPlane": 22
+        },
+        {
+            "id": 23,
+            "number": 86420,
+            "flight_name": "EF468",
+            "city_From": 3,
+            "city_To": 2,
+            "flight_Date": "2024-07-21 13:45:00",
+            "IDFSPlane": 23
+        },
+        {
+            "id": 24,
+            "number": 13579,
+            "flight_name": "EF975",
+            "city_From": 4,
+            "city_To": 3,
+            "flight_Date": "2024-07-22 19:30:00",
+            "IDFSPlane": 24
+        },
+        {
+            "id": 25,
+            "number": 24680,
+            "flight_name": "EF680",
+            "city_From": 5,
+            "city_To": 4,
+            "flight_Date": "2024-07-23 15:15:00",
+            "IDFSPlane": 25
+        },
+        {
+            "id": 26,
+            "number": 98765,
+            "flight_name": "EF765",
+            "city_From": 1,
+            "city_To": 5,
+            "flight_Date": "2024-07-24 11:00:00",
+            "IDFSPlane": 26
+        },
+        {
+            "id": 27,
+            "number": 54321,
+            "flight_name": "EF321",
+            "city_From": 2,
+            "city_To": 1,
+            "flight_Date": "2024-07-25 16:45:00",
+            "IDFSPlane": 27
+        },
+        {
+            "id": 28,
+            "number": 67890,
+            "flight_name": "EF678",
+            "city_From": 3,
+            "city_To": 2,
+            "flight_Date": "2024-07-26 12:30:00",
+            "IDFSPlane": 28
+        },
+        {
+            "id": 29,
+            "number": 12345,
+            "flight_name": "EF123",
+            "city_From": 4,
+            "city_To": 3,
+            "flight_Date": "2024-07-27 18:15:00",
+            "IDFSPlane": 29
+        },
+        {
+            "id": 30,
+            "number": 86420,
+            "flight_name": "EF468",
+            "city_From": 5,
+            "city_To": 4,
+            "flight_Date": "2024-07-28 14:00:00",
+            "IDFSPlane": 330
+        }
+    ],
+    "user_flight": [
+        {
+            "id": 1,
+            "IDUser": 1,
+            "IDFlight": 1
+        },
+        {
+            "id": 2,
+            "IDUser": 2,
+            "IDFlight": 2
+        },
+        {
+            "id": 3,
+            "IDUser": 3,
+            "IDFlight": 1
+        },
+        {
+            "id": 4,
+            "IDUser": 4,
+            "IDFlight": 3
+        },
+        {
+            "id": 5,
+            "IDUser": 5,
+            "IDFlight": 4
+        }
+    ]
+}]
