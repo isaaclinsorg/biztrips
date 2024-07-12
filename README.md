@@ -1,96 +1,58 @@
-# Project Title
+# E-Ticketverwaltung Frontend
 
+Willkommen zum E-Ticketverwaltung Frontend-Projekt! Dies ist das Frontend unserer innovativen Flugticket-Buchungsplattform, die als Schulprojekt entwickelt wurde. Wir haben eine benutzerfreundliche Anwendung erstellt, die es den Nutzern ermöglicht, schnell und einfach ihre Flugtickets zu buchen.
 
-[![forthebadge](https://forthebadge.com/images/badges/code-it-break-it.svg)](https://forthebadge.com)
+## Technologien
 
-One Paragraph of the project description
+Dieses Projekt wurde mit den folgenden Technologien entwickelt:
 
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
+- **HTML**: Strukturierung der Webseiten.
+- **SCSS**: Erweiterte CSS-Funktionen für das Styling.
+- **JavaScript**: Funktionale Programmierung und interaktive Features.
+- **React.js**: JavaScript-Framework für den Aufbau der Benutzeroberfläche.
+**Java**: Im Backend haben wir um die API-Calls zu machen Java benutzt.
 
-## Getting Started
+## Zusätzliche Technologien
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+Zusätzlich zu den Haupttechnologien haben wir die folgenden Bibliotheken verwendet:
 
-### Prerequisites
+- **Bootstrap**: Für vorgefertigte UI-Komponenten und responsives Design.
+- **Tailwind CSS**: Für ein Utility-First CSS-Framework und flexible Anpassungen.
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+## Erste Schritte
 
-### Installing
+Folgen Sie diesen Schritten, um das Projekt lokal zu installieren und zu starten:
 
-A step by step series of examples that tell you how to get a development
-environment running
+1. **Repository klonen**:
+   ```bash
+   git clonehttps://github.com/isaaclinsorg/biztrips.git
+   cd biztrips
+   ```
 
-Say what the step will be
+2. **Abhängigkeiten installieren**:
+   ```bash
+   npm install
+   ```
 
-    Give the example
+3. **Entwicklungsserver starten**:
+   ```bash
+   npm start
+   ```
 
-And repeat
+Die Anwendung sollte nun unter `http://localhost:3000` verfügbar sein.
 
-    until finished
+## Mitwirkende
 
-End with an example of getting some data out of the system or using it
-for a little demo
+- **Eris Jakupi**: [GitHub Profil](https://github.com/eri6081)
+- **Isaac Lins**: [GitHub Profil](https://github.comisaaclinsorg)
+- **Patrick Pilotti**: [GitHub Profil](https://github.com/patrick-pilotti)
 
-## Running the tests
+## Lizenz
 
-Explain how to run the automated tests for this system
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Details finden Sie in der [LICENSE](LICENSE)-Datei.
 
-### Sample Tests
+---
 
-Explain what these tests test and why
+Vielen Dank, dass Sie unser E-Ticketverwaltung Schulprojekt nutzen! Wir hoffen, dass Ihnen unser Service gefällt.
 
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
-
-## Deployment
-
-Add additional notes to deploy this on a live system
-
-## Built With
-
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
-
-## Authors
-
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+Diese README.md-Datei bietet einen umfassenden Überblick über das E-Ticketverwaltung Frontend-Projekt, einschließlich des Zwecks, der verwendeten Technologien, der Einrichtung und Ausführung des Projekts lokal, der Mitwirkenden und der Lizenzinformationen.
