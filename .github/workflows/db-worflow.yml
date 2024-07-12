@@ -28,6 +28,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build . --file Dockerfile --tag mysql-edelflies
+        run: docker build . --file Dockerfile --tag patrickpilotti/db-biztrips:${{ github.sha }}
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
