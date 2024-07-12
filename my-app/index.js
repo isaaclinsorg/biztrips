@@ -13,11 +13,11 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const app = express();
 const fs = require('fs');
-let isUsingFakeData = false;
+let isUsingFakeData = true; //TODO: change this to false when done, please. Or not. I'm not your boss. I'm just a comment.
 
 let fakedata = [];
 console.log('loading fake data');
-fs.readFile('./mysql/fakedata/fakedata.json', 'utf8', (err, data) => {
+fs.readFile('./mysql/fakedata/fakedatasmall.json', 'utf8', (err, data) => {
     if (err) {
         console.error('error:',err);
 
