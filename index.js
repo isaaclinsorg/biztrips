@@ -1,9 +1,33 @@
 const express = require('express');
 const fs = require('fs');
 const usersTable = require('./data/users.json');
-
+const swaggerJsdoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
 const app = express();
 app.use(express.json()); 
+const options = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: "Edelflies API",
+            version: '1.0.0',
+            description: 'Edelfliest API for Biztrip',
+        },
+        servers: [
+            {
+                url: 'http://localhost:3000',
+            },
+        ],
+    },
+    apis: ['./index.js'],
+};
+const swaggerSpec = swaggerJsdoc(options);
+app.use('/swagger-ui', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+
+
+
+
 
 app.get('/users', (req, res) => {
     res.json(usersTable);
@@ -17,6 +41,9 @@ app.get('/users/:id', (req, res) => {
         res.status(404).send('User not found');
     }
 });
+
+
+
 app.post('/users', (req, res) => {
     const newUser = req.body;
     if (!newUser.first_name || !newUser.last_name || !newUser.email || !newUser.password) {
