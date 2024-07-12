@@ -31,9 +31,3 @@ jobs:
         run: docker build . --file Dockerfile --tag mysql-edelflies
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-
-      - name: Run Docker container
-        run: |
-          docker run -d -p 3306:3306 --name mysql-edelflies \
-            -e MYSQL_ROOT_PASSWORD=${{ secrets.MYSQL_ROOT_PASSWORD }} \
-            mysql-edelflies
