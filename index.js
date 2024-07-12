@@ -733,6 +733,184 @@ app.delete('/employees/:id', (req, res) => {
 });
 
 
+/**
+ * @swagger
+ * /flights:
+ *   get:
+ *     summary: Get all flights
+ *     tags:
+ *       - flights
+ *     responses:
+ *       200:
+ *         description: Returns an array of flights
+ *       500:
+ *         description: Error retrieving flights
+ */
+app.get('/flights', (req, res) => {
+    res.json(flightsTable);
+});
+
+/**
+ * @swagger
+ * /flights:
+ *   post:
+ *     summary: Create a new flight
+ *     tags:
+ *       - flights
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Flight'
+ *     responses:
+ *       201:
+ *         description: Flight created successfully
+ *       400:
+ *         description: Missing required fields
+ *       500:
+ *         description: Error saving flight data
+ */
+app.post('/flights', (req, res) => {
+    const newFlight = req.body;
+    if (!newFlight.number || !newFlight.flight_name || !newFlight.city_From || !newFlight.city_To || !newFlight.flight_Date || !newFlight.IDFSPlane) {
+        res.status(400).send('Missing required fields');
+    } else {
+        const newId = flightsTable.length + 1;
+        newFlight.id = newId;
+        flightsTable.push(newFlight);
+        fs.writeFile('./data/flights.json', JSON.stringify(flightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving flight data');
+            } else {
+                res.status(201).send('Flight data saved successfully');
+            }
+        });
+    }
+});
+
+/**
+ * @swagger
+ * /flights/{id}:
+ *   get:
+ *     summary: Get a flight by ID
+ *     tags:
+ *       - flights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Returns the flight with the specified ID
+ *       404:
+ *         description: Flight not found
+ */
+app.get('/flights/:id', (req, res) => {
+    const flightId = parseInt(req.params.id);
+    const flight = flightsTable.find(flight => flight.id === flightId);
+    if (flight) {
+        res.json(flight);
+    } else {
+        res.status(404).send('Flight not found');
+    }
+});
+
+/**
+ * @swagger
+ * /flights/{id}:
+ *   put:
+ *     summary: Update a flight by ID
+ *     tags:
+ *       - flights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Flight'
+ *     responses:
+ *       200:
+ *         description: Flight updated successfully
+ *       404:
+ *         description: Flight not found
+ *       500:
+ *         description: Error saving flight data
+ */
+app.put('/flights/:id', (req, res) => {
+    const flightId = parseInt(req.params.id);
+    const updatedFlight = req.body;
+    const flightIndex = flightsTable.findIndex(flight => flight.id === flightId);
+    if (flightIndex !== -1) {
+        flightsTable[flightIndex] = {
+            id: flightId,
+            number: updatedFlight.number,
+            flight_name: updatedFlight.flight_name,
+            city_From: updatedFlight.city_From,
+            city_To: updatedFlight.city_To,
+            flight_Date: updatedFlight.flight_Date,
+            IDFSPlane: updatedFlight.IDFSPlane
+        };
+        fs.writeFile('./data/flights.json', JSON.stringify(flightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving flight data');
+            } else {
+                res.status(200).send('Flight data updated successfully');
+            }
+        });
+    } else {
+        res.status(404).send('Flight not found');
+    }
+});
+
+/**
+ * @swagger
+ * /flights/{id}:
+ *   delete:
+ *     summary: Delete a flight by ID
+ *     tags:
+ *       - flights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Flight deleted successfully
+ *       404:
+ *         description: Flight not found
+ *       500:
+ *         description: Error saving flight data
+ */
+app.delete('/flights/:id', (req, res) => {
+    const flightId = parseInt(req.params.id);
+    const flightIndex = flightsTable.findIndex(flight => flight.id === flightId);
+    if (flightIndex !== -1) {
+        flightsTable.splice(flightIndex, 1);
+        fs.writeFile('./data/flights.json', JSON.stringify(flightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving flight data');
+            } else {
+                res.status(204).send('Flight deleted successfully');
+            }
+        });
+    } else {
+        res.status(404).send('Flight not found');
+    }
+});
 
 
 app.listen(3000, () => {
