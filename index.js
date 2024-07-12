@@ -26,6 +26,7 @@ app.use('/swagger-ui', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 const usersTable = require('./data/users.json');
 const citiesTable = require('./data/cities.json');
 const planesTable = require('./data/planes.json');
+const employeesTable = require('./data/employees.json');
 
 /**
  * @swagger
