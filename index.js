@@ -27,6 +27,9 @@ const usersTable = require('./data/users.json');
 const citiesTable = require('./data/cities.json');
 const planesTable = require('./data/planes.json');
 const employeesTable = require('./data/employees.json');
+const flightsTable = require('./data/flights.json');
+const userflightsTable = require('./data/userflights.json');
+
 
 /**
  * @swagger
@@ -912,6 +915,180 @@ app.delete('/flights/:id', (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /userflights:
+ *   get:
+ *     summary: Get all user flights
+ *     tags:
+ *       - userflights
+ *     responses:
+ *       200:
+ *         description: Returns an array of user flights
+ *       500:
+ *         description: Error retrieving user flights
+ */
+app.get('/userflights', (req, res) => {
+    res.json(userFlightsTable);
+});
+
+/**
+ * @swagger
+ * /userflights:
+ *   post:
+ *     summary: Create a new user flight
+ *     tags:
+ *       - userflights
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/UserFlight'
+ *     responses:
+ *       201:
+ *         description: User flight created successfully
+ *       400:
+ *         description: Missing required fields
+ *       500:
+ *         description: Error saving user flight data
+ */
+app.post('/userflights', (req, res) => {
+    const newUserFlight = req.body;
+    if (!newUserFlight.IDUser || !newUserFlight.IDFlight) {
+        res.status(400).send('Missing required fields');
+    } else {
+        const newId = userFlightsTable.length + 1;
+        newUserFlight.id = newId;
+        userFlightsTable.push(newUserFlight);
+        fs.writeFile('./data/userflights.json', JSON.stringify(userFlightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving user flight data');
+            } else {
+                res.status(201).send('User flight data saved successfully');
+            }
+        });
+    }
+});
+
+/**
+ * @swagger
+ * /userflights/{id}:
+ *   get:
+ *     summary: Get a user flight by ID
+ *     tags:
+ *       - userflights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Returns the user flight with the specified ID
+ *       404:
+ *         description: User flight not found
+ */
+app.get('/userflights/:id', (req, res) => {
+    const userFlightId = parseInt(req.params.id);
+    const userFlight = userFlightsTable.find(flight => flight.id === userFlightId);
+    if (userFlight) {
+        res.json(userFlight);
+    } else {
+        res.status(404).send('User flight not found');
+    }
+});
+
+/**
+ * @swagger
+ * /userflights/{id}:
+ *   put:
+ *     summary: Update a user flight by ID
+ *     tags:
+ *       - userflights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/UserFlight'
+ *     responses:
+ *       200:
+ *         description: User flight updated successfully
+ *       404:
+ *         description: User flight not found
+ *       500:
+ *         description: Error saving user flight data
+ */
+app.put('/userflights/:id', (req, res) => {
+    const userFlightId = parseInt(req.params.id);
+    const updatedUserFlight = req.body;
+    const userFlightIndex = userFlightsTable.findIndex(flight => flight.id === userFlightId);
+    if (userFlightIndex !== -1) {
+        userFlightsTable[userFlightIndex] = {
+            id: userFlightId,
+            IDUser: updatedUserFlight.IDUser,
+            IDFlight: updatedUserFlight.IDFlight
+        };
+        fs.writeFile('./data/userflights.json', JSON.stringify(userFlightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving user flight data');
+            } else {
+                res.status(200).send('User flight data updated successfully');
+            }
+        });
+    } else {
+        res.status(404).send('User flight not found');
+    }
+});
+
+/**
+ * @swagger
+ * /userflights/{id}:
+ *   delete:
+ *     summary: Delete a user flight by ID
+ *     tags:
+ *       - userflights
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: User flight deleted successfully
+ *       404:
+ *         description: User flight not found
+ *       500:
+ *         description: Error saving user flight data
+ */
+app.delete('/userflights/:id', (req, res) => {
+    const userFlightId = parseInt(req.params.id);
+    const userFlightIndex = userFlightsTable.findIndex(flight => flight.id === userFlightId);
+    if (userFlightIndex !== -1) {
+        userFlightsTable.splice(userFlightIndex, 1);
+        fs.writeFile('./data/userflights.json', JSON.stringify(userFlightsTable), (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Error saving user flight data');
+            } else {
+                res.status(204).send('User flight deleted successfully');
+            }
+        });
+    } else {
+        res.status(404).send('User flight not found');
+    }
+});
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
