@@ -1,0 +1,39 @@
+.header-container {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Elemente vertikal zentrieren */
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+#login {
+    margin-left: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.logo {
+    width: 100px;
+    height: auto; /* Höhe automatisch anpassen */
+}
