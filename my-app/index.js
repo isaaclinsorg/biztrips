@@ -75,8 +75,6 @@ app.use('/swagger-ui', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get('/users', (_, res) => {
     if (isUsingFakeData) {
         res.json(fakedata[0].user[0]);
-    } else { 
-        res.json({ message: "This route needs to be implemented." }); // TODO: Implement the /users GET with mysql
     }
 });
 
