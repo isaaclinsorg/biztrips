@@ -9,7 +9,9 @@ on:
     branches: [main]
     paths:
       - 'DB/**'
-
+  workflow_dispatch:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
