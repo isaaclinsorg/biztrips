@@ -112,19 +112,7 @@ app.get('/users/:id', (req, res) => {
             res.status(404).json({ message: "User not found." });
         }
     } else {
-        const query = 'SELECT * FROM users WHERE id = ?';
-        connection.query(query, [userId], (error, results) => {
-            if (error) {
-                console.error(error);
-                res.status(500).json({ message: "Internal server error." });
-            } else {
-                if (results.length > 0) {
-                    res.json(results[0]);
-                } else {
-                    res.status(404).json({ message: "User not found." });
-                }
-            }
-        });
+        res.json({ message: "This route needs to be implemented." }); // TODO: Implement the /users/:id GET with mysql
     }
 });
 
