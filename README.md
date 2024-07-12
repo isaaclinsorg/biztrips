@@ -97,9 +97,8 @@ Heute kamen wir insgesamt auch sehr gut voran, Isaac konnte die Endpunkte erfolg
 ### 28.06.2024
 Heute hat sich Isaac dazu entschieden das Backend doch mit Javascript neu wieder zu realisieren, jedoch blieben die verschiedenen Endpoints erhalten. Patrick war es möglich heute unser Front- und Backend zu deployen dies konnte er auch ausführlich in der Dokumentation beschreiben.
 
-### 05.07.2024 — Letze Woche
 
-### 05.07.2024 — Letzte Woche
+### 05.07.2024
 
 Heute ist unser letzter Tag vor der Abgabe. Wir konnten die letzten Änderungen vornehmen und einige Feinschliffe an unserem Projekt durchführen. Isaac hat die endgültige Datenbankanbindung erfolgreich integriert und die Backend-Architektur in mehrere Dateien aufgeteilt, um die Wartbarkeit zu verbessern.
 
