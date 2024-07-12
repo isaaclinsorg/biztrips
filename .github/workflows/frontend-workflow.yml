@@ -25,6 +25,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build . -t patrickpilotti/biztrips-frontend:${{ github.sha }}
+        working-directory: frontend/frontend
 
   push-job:
     runs-on: ubuntu-latest
