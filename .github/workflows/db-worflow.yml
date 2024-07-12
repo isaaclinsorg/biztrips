@@ -28,5 +28,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build . --file Dockerfile --tag patrickpilotti/db-biztrips:${{ github.sha }}
+        working-directory: ./backend/edel-flies/DB
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
