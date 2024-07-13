@@ -1,3 +1,7 @@
+import axios from 'axios';
+import React from 'react';
+
+
 export async function getBusinessTrips() {
   const response = await fetch("http://localhost:8080/v1/trips");
   if (response.ok) {
@@ -27,10 +31,13 @@ export async function getWishlistItems() {
   throw new Error(`Error ${response.status}: ${await response.text()}`);
 }
 
-export async function getAllTickets() {
-  // Fügen Sie hier die Logik hinzu, um die Ticketdaten abzurufen
-  return [
-    { id: 1, title: 'Ticket 1', description: 'Beschreibung 1', startTrip: '2024-01-01', endTrip: '2024-01-10' },
-    { id: 2, title: 'Ticket 2', description: 'Beschreibung 2', startTrip: '2024-02-01', endTrip: '2024-02-10' },
-  ];
+export async function getAllTickets () {
+  try {
+    const response = await axios.get('http://localhost:3000/planes');
+        const planesData = response.data;
+        console.log(planesData);
+    // Verarbeiten Sie die Daten (z. B. speichern Sie sie im Zustand Ihrer Komponente)
+  } catch (error) {
+    console.error('Fehler beim Abrufen der Daten:', error);
+  }
 }

@@ -3,7 +3,7 @@ FROM mysql:latest
 
 # Set environment variables
 ENV MYSQL_DATABASE=edelflies
-ENV MYSQL_ROOT_PASSWORD=220563
+ENV MYSQL_ROOT_PASSWORD=beispiel_passwort
 
 # Add the schema and data scripts
 ADD mysql/schema.sql /docker-entrypoint-initdb.d
