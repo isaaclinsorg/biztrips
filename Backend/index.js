@@ -38,7 +38,7 @@ const citiesTable = require('./data/cities.json');
 const planesTable = require('./data/planes.json');
 const employeesTable = require('./data/employees.json');
 const flightsTable = require('./data/flights.json');
-const userflightsTable = require('./data/userflights.json');
+const userFlightsTable = require('./data/userflights.json');
 
 
 /**
