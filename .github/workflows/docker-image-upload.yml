@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/biztripsEdelflies:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/biztripsedelflies:latest
