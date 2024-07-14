@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 5001,
+        "IDUser": 1001,
+        "IDFlight": 201
+    },
+    {
+        "id": 5002,
+        "IDUser": 1002,
+        "IDFlight": 202
+    },
+    {
+        "id": 5003,
+        "IDUser": 1003,
+        "IDFlight": 201
+    }
+]

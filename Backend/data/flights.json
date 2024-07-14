@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "id": 201,
+        "number": 12345,
+        "flight_name": "EF123",
+        "city_From": 1,
+        "city_To": 2,
+        "flight_Date": "2024-06-28 10:00:00",
+        "IDFSPlane": 301
+    },
+    {
+        "id": 202,
+        "number": 67890,
+        "flight_name": "EF678",
+        "city_From": 2,
+        "city_To": 1,
+        "flight_Date": "2024-06-29 14:30:00",
+        "IDFSPlane": 302
+    },
+    {
+        "id": 203,
+        "number": 54321,
+        "flight_name": "EF321",
+        "city_From": 3,
+        "city_To": 4,
+        "flight_Date": "2024-07-01 08:45:00",
+        "IDFSPlane": 303
+    },
+    {
+        "id": 204,
+        "number": 98765,
+        "flight_name": "EF765",
+        "city_From": 4,
+        "city_To": 3,
+        "flight_Date": "2024-07-02 16:15:00",
+        "IDFSPlane": 304
+    }
+]

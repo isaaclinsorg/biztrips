@@ -1,1 +1,17 @@
-[{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":1},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":2},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":3},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":4},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":5},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":6},{"capacity":200,"IDFSCity":"JFK","airline":"EdelAir","model":"Boeing 737","registration":"D-EDL123","id":7}]
+[
+    {
+        "id": 301,
+        "capacity": 150,
+        "IDFSCity": 1
+    },
+    {
+        "id": 302,
+        "capacity": 200,
+        "IDFSCity": 2
+    },
+    {
+        "id": 303,
+        "capacity": 180,
+        "IDFSCity": 3
+    }
+]

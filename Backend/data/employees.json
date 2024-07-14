@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 101,
+        "name": "John Smith",
+        "job_title": "Pilot"
+    },
+    {
+        "id": 102,
+        "name": "Mary Johnson",
+        "job_title": "Flight Attendant"
+    },
+    {
+        "id": 103,
+        "name": "Robert Brown",
+        "job_title": "Ground Crew"
+    }
+]
