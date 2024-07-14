@@ -1,1 +1,13 @@
-[{"id":1,"full_name":"New York City","abbreviation":"NYC"},{"id":2,"full_name":"New York City","abbreviation":"NYC"},{"id":3,"full_name":"New York City","abbreviation":"NYC"}]
+[{
+    "id": 1,
+    "full_name": "New York City",
+    "abbreviation": "NYC"
+}, {
+    "id": 2,
+    "full_name": "New York City",
+    "abbreviation": "NYC"
+}, {
+    "id": 3,
+    "full_name": "New York City",
+    "abbreviation": "NYC"
+}]
