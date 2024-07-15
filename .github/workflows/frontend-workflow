@@ -1,0 +1,34 @@
+name: Frontend Workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Frontend/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'Frontend/**'
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build . -t patrickpilotti/biztrips-frontend:${{ github.sha }}
+        working-directory: frontend/frontend
+
+      - name: Docker Login
+        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_SECRET }}
+
+      - name: Push Docker image
+        run: docker push patrickpilotti/biztrips-frontend:${{ github.sha }}
